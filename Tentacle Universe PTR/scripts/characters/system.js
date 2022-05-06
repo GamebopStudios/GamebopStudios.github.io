@@ -61,8 +61,8 @@ function writeEncounter(scene) {
 			//writeFunction("loadEncounter('system', 'otherNotes')", "Review important notes");
 			writeFunction("loadEncounter('system', 'veganMenu')", "Enable vegetarian / carnivore mode, disabling straight/gay content");
 			writeText("<hr>");
-			writeCenteredText("This game uses art by artists like Enoshima Iki, Nagi Ichi, Oreteki18kin, and Gujira. Every image for each character is credited, and the artist can be reviewed by hovering over the image, hold-tapping it on mobile, or by looking in the character's logbook. In addition use the link below or in the credits for a full list of artists as well as links to their pixiv accounts and dlsite circles where you can purchase the CG sets these characters came from:");
-			writeFunction("loadEncounter('system', 'artistList')", "See the list of artists");
+			//writeCenteredText("This game uses art by artists like Enoshima Iki, Nagi Ichi, Oreteki18kin, and Gujira. Every image for each character is credited, and the artist can be reviewed by hovering over the image, hold-tapping it on mobile, or by looking in the character's logbook. In addition use the link below or in the credits for a full list of artists as well as links to their pixiv accounts and dlsite circles where you can purchase the CG sets these characters came from:");
+			//writeFunction("loadEncounter('system', 'artistList')", "See the list of artists");
 			writeText("<hr>");
 			writeCenteredText("Once you've read the information and chosen your desired settings...");
 			writeCenteredText("<span style='font-size:300%;'><b>Choose Your Character!</b></span>");
