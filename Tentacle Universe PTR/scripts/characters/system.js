@@ -7,9 +7,9 @@ var newItems = [ //If price is 0 it isn't for sale
 	{name: "Butt", 				key: true, 		price: 0, 	image: "scripts/gamefiles/items/butt.jpg", description: ""},
 	{name: "Ghost AR", 			key: true, 		price: 0, 	image: "scripts/gamefiles/items/ghostAR.jpg", description: "The brand new mobile game Ghost AR! Track ghosts around the city, collect them all and save the world from their ghastly threat!"},
 	{name: "Town Map", 			key: true, 		price: 20, 	image: "scripts/gamefiles/items/map.jpg", description: "Allows you to navigate around town more easily."},
-	{name: "Hypnosis Textbook", key: true, 	price: 50, 	image: "scripts/gamefiles/items/hypnosisTextbook.jpg", description: "A textbook on hypnosis, you can read it at home to improve your skill."},
-	{name: "Hacking Textbook", 	key: true, 	price: 50, 	image: "scripts/gamefiles/items/hackingTextbook.jpg", description: "A textbook on hacking, you can read it at home to improve your skill."},
-	{name: "Counseling Textbook", key: true, 	price: 50, 	image: "scripts/gamefiles/items/counselingTextbook.jpg", description: "A textbook on counseling, you can read it at home to improve your skill."},
+	//{name: "Hypnosis Textbook", key: true, 	price: 50, 	image: "scripts/gamefiles/items/hypnosisTextbook.jpg", description: "A textbook on hypnosis, you can read it at home to improve your skill."},
+	//{name: "Hacking Textbook", 	key: true, 	price: 50, 	image: "scripts/gamefiles/items/hackingTextbook.jpg", description: "A textbook on hacking, you can read it at home to improve your skill."},
+	//{name: "Counseling Textbook", key: true, 	price: 50, 	image: "scripts/gamefiles/items/counselingTextbook.jpg", description: "A textbook on counseling, you can read it at home to improve your skill."},
 	{name: "Lady", 				key: true, 		price: 0, 	image: "scripts/gamefiles/profiles/lady.jpg", description: "For if you'd like to play as a cute lady. Unlocks the Lady character portrait. Aesthetic change only, art by Nusumenaihxseki"},
 ];
 
@@ -59,11 +59,11 @@ function writeEncounter(scene) {
             writeCenteredText("We are looking for Artists to design Artwork for this game just for the fun of it. Without asking for payment. We may be able to pay in the future but not at the current moment");
 			writeCenteredText("Before you begin, please keep in mind that female and male content can be disabled in the button below and Please have fun!");
 			//writeFunction("loadEncounter('system', 'otherNotes')", "Review important notes");
-			writeFunction("loadEncounter('system', 'veganMenu')", "Enable vegetarian / carnivore mode, disabling straight/gay content");
+			//writeFunction("loadEncounter('system', 'veganMenu')", "Enable vegetarian / carnivore mode, disabling straight/gay content");
 			writeText("<hr>");
-			writeCenteredText("This game uses art by artists like Enoshima Iki, Nagi Ichi, Oreteki18kin, and Gujira. Every image for each character is credited, and the artist can be reviewed by hovering over the image, hold-tapping it on mobile, or by looking in the character's logbook. In addition use the link below or in the credits for a full list of artists as well as links to their pixiv accounts and dlsite circles where you can purchase the CG sets these characters came from:");
+			/*writeCenteredText("This game uses art by artists like Enoshima Iki, Nagi Ichi, Oreteki18kin, and Gujira. Every image for each character is credited, and the artist can be reviewed by hovering over the image, hold-tapping it on mobile, or by looking in the character's logbook. In addition use the link below or in the credits for a full list of artists as well as links to their pixiv accounts and dlsite circles where you can purchase the CG sets these characters came from:");
 			writeFunction("loadEncounter('system', 'artistList')", "See the list of artists");
-			writeText("<hr>");
+			writeText("<hr>");*/
 			writeCenteredText("Once you've read the information and chosen your desired settings...");
 			writeCenteredText("<span style='font-size:300%;'><b>Choose Your Character!</b></span>");
 			document.getElementById('output').innerHTML += `
@@ -78,7 +78,8 @@ function writeEncounter(scene) {
 			`;
 			// replace [\r\n]+ with , 
 			writeText("<hr>");
-			writeCenteredText("<span style='font-size:300%;'>Thank you to all of my fantastic patrons:</span>");
+            writeCenteredText("Placeholder Text");
+			/*writeCenteredText("<span style='font-size:300%;'>Thank you to all of my fantastic patrons:</span>");
 			writeSpecial("Robbie, SlackerSavior, MechaBomb, Nari Gim, Jacob Puckett, Michael Robles, e3, Ryan German, Robert, Christopher Bartz, shadow goob82, Ora494, Noel Chandler Sanders Metz, Vikignir, William Thomson, Ruinn, Louts, HiCaTe, Dylan, ArtemisAisu, Adrian Vasquez, xdrake100, Holden Martin, Matthew Landin, that GUY, Elias, Iron Diana, 4MinuteWarning, Hi There, RimuruTempest, æž—å®¶è±ª, yami, jack spencer, maxime, J_C_L, Jinouga, Marco Wassmer, Colin E, Badaxe, Scal, Gavin Moore, Zachary heard, Shadeshadow227, EniVanella, dalvin lopez, thiefwriter, Conor, Dumcanem, Mr. L, NecroDark, Alisdair Gaston, Mason, KOOLAID, Arctic Husk, Skygods, Jd, Henry Litten, Amy Mors, Farid, Ouspinousse, Forde Wellman, Alex, Piero Hooker, Shivane, Ganglygoo, Antoine Panaye, Mac, yjzyjz, Draconet547, Lexie, Lionel Cervantes, Carl Brenston, kyle fenton, Freya Valentine, Jeff, JOOWHAN SHIN, mitchell cross, Tagaron Zockt, Jisatsu, Silverstreak1410, Janaria Mideres, Xander, qqss, Murray Anderson, Tom Harley, sakkra83, ASSIRTIVlizard, Tobias Bischoff, Braedon Jasper, Callum Northedge, JosÃ© Emilio Llopis Torremocha, Blacklisted 756, BlackDahliaStudios, Leon, OrionPax, JulikBerlin, landon xiong, zzeedd, Kyle Jones, Yongjie Zhao, 214_26à¸ªà¸´à¸—à¸˜à¸´à¹‚à¸Šà¸„ à¹€à¸‰à¸´à¸™, CGI Lilboss, spencer, mahdeennave, mora, è‡´è¿œ èˆ’, nathan Deglman, Arkanian001, KIVA, Isaiah Sandoval, Neyafi, Cameron Farabee, Lukas Caspers, Nicola M, GRiiMM GAMiNG, GWQwQ, Dylan2019, Nichole Cain, Venomill, Zachary Schicker, Indytronic, Andrew Corrigan, J, Matthew Preston, Mr.Artrist, DigiReave, Johnathen Likens, Sumanth, Mango, Maxwell Dedmon, TeLoad, Ary Toussaint, faaaa, Cameron Geddes, brybry, Omran khalifa, Spartan 5398, Boo3, Danny Surety, robert therrien, Patrik LopariÄ‡, Dylan York, Todd Vogel, A Channel, joseph, dawson, Michael Graham, EgoDraconis, Petrichor, Mariusz, Traveler123, Justin, Sean sullivan, D'andre, David Outram, PIGDER, Andrew, Sgt.Vodka, Kient Wong, Harry Foster-major, Aaron Brown, Ash mash, Calla Smith, Bastl, Rafa Smith, pest, Zach allen, Onii-sama, Carson Goodwin, Romnomnom, Dragoon22, mitchellwolbert, Wells Wells, undead270, ThatOtherGuy, Ashwinder, Hello Darkness, Regulus, Funnykitty, Seamus Porter, BINKS, ShadowDragon, Richard Pryor, Zane regel, John Nixon, Noh Bhodie, Billymays, Genxin, Ethan Brian, poyo, Greatsage56 ., sb2017, Wysdom, Me Notyou, john sparks, Darien Cordero, Brandon Leary, Sera, ggboomsky, RatKnight, Bradley Herbert, SomebodyElse, Peter H, é•¿å¹³ é¬£, thesingleguy, Kethis Immortalis, Anton Schmidt, david thompson, Jayesonn leleaux, Bleed1ngthunder, Eric Hslew, Vikteren, theoron, AnotherAccount333, Kaliden, greatred, Limitless, KVBismarc, Geoff Heimos, Kieron Kow, Slomberg, henry grobins, ddkre, SmolFish, Iâ€™m a Mitch, GirmusCz, Daniel Vivette, Harry Brasch, Markus Hansen, Leanerbike1363, Tanman, waazzzup14, DarthMalak, Danny Nguyen, Grim2011, Darrell Goodman, Bonelessunknown, Phanes, Scumstango, Aegil, Wei, Dugelle, Stollwerk, Chaaaanon, Nutburger, Noah675, mazterlith, john smith, Your Husbando, Carlos, Verillia tristari, ShadowHunter1394, ItsAllOgreNow, Jesse Greene, Karan Raj Gupta, Nils Maier, Ariados, Jane, Snaked, qwerty, murgatroid99, Roy, Wild Bill, ChronosEdge, and brandon for funding this work! The patreon funds are split as Captain Cryptogreek has taken over as lead writer for the game.");
 			writeText("<hr>");
 			writeCenteredText("<span style='font-size:300%;'>And special thanks to:</span>");
@@ -87,7 +88,7 @@ function writeEncounter(scene) {
 			writeSpecial("Here's a list of authors who's written for the game:");
 			writeSpeech("<a href = 'https://noodlejacuzzi.github.io/index.html'>Noodle Jacuzzi</a>", "scripts/gamefiles/characters/noodle.jpg", "<b>Author of momF, Lana, tomgirlF, succubusF, and others.</b><br>I almost named myself Dwayne 'The Guac' Johnson.<br>Click my name to play my other games if you want.");
 			writeSpeech("Cryptogreek", "scripts/gamefiles/characters/crypto.jpg", "<b>Author of kuroF, mistressF, maidF, mejiF, housekeepF, and others.</b><br>Thanks for enjoying the game my fellow degenerates!");
-			writeSpeech("SlackerSavior", "scripts/gamefiles/characters/slacker.jpg", "<b>Author of sportsF, coachF, coldF, swimmerF, and orangeF.</b><br>I wanted to write 'Don't ask me for shit' here, but it felt a little too rude.<br>So feel free to ask, but don't expect results anytime soon.");
+			writeSpeech("SlackerSavior", "scripts/gamefiles/characters/slacker.jpg", "<b>Author of sportsF, coachF, coldF, swimmerF, and orangeF.</b><br>I wanted to write 'Don't ask me for shit' here, but it felt a little too rude.<br>So feel free to ask, but don't expect results anytime soon.");*/
 			break;
 		}
 		case "otherNotes": {
@@ -192,7 +193,7 @@ function writeEncounter(scene) {
 			writeText("The house is free too, so you could just sleep in all day and get paid every five days like clockwork. But there's a lot more on offer here to enjoy.");
 			writeText("This town is a hotspot of beautiful women, and the school it surrounds is often referred to by its nickname.");
 			writeText("<b>Hentai University</b>");*/
-			writeFunction("changeLocation('playerHouse')", "Get Started");
+			writeFunction("changeLocation('cellsDungeon')", "Get Started");
 			break;
 		}
 		case "oretekiTest": {
@@ -564,7 +565,7 @@ function writeEncounter(scene) {
 				t You thoroughly read through the book on hacking. It's an older script, but the techniques are still useful. A section on how to install system backdoors is particularly interesting.
 			`);
 			writeSpecial("Your hacking skill has increased!");
-			data.player.hacking += 1;
+			data.player.brainhacking += 1;
 			updateMenu();
 			addFlag("mom", scene);
 			passTime();
