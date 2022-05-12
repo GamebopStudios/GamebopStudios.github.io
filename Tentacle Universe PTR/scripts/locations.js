@@ -1,4 +1,15 @@
 var locationArray = [
+	{index: "lowerDungeon", name: "Lower Dungeon", buttons: [
+		{name: "Area Not Avalible", top: 79, left: 20, type: "location", target: "playerHous", time: "MorningEvening",},
+		{name: "Area Not Avalible", top: 79, left: 50, type: "location", target: "playerOffic", time: "MorningEvening",},
+		{name: "Cell Area", top: 79, left: 5, type: "location", target: "cellsDungeon", time: "MorningEvening",},
+		{name: "Outside Not Avalible Yet", top: 30, left: 35, type: "location", target: "cellsDungeon", time: "MorningEvening",},
+	],},
+	{index: "cellsDungeon", name: "Dungeon Cells", buttons: [
+		{name: "Area Not Avalible", top: 79, left: 20, type: "location", target: "apartmentOutsid", time: "MorningEvening",},
+		{name: "Area Not Avalible", top: 79, left: 45, type: "location", target: "playerOffic", time: "MorningEvening",},
+		{name: "Back up to the Entrance", top: 79, left: 70, type: "location", target: "lowerDungeon", time: "MorningEvening",},
+	],},
 	{index: "playerHouse", name: "Your House", buttons: [
 		{name: "Area Not Avalible", top: 79, left: 20, type: "location", target: "apartmentOutsid", time: "MorningEvening",},
 		{name: "Area Not Avalible", top: 79, left: 50, type: "location", target: "playerOffic", time: "MorningEvening",},
