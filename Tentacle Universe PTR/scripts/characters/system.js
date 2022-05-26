@@ -1,4 +1,4 @@
-var character = 'system';
+﻿var character = 'system';
 var eventArray = [
 	{index: "paperwork", name: "File Paperwork", location: 'playerOffice', time: "MorningEvening", 
 	itemReq: "", trustMin: 0, trustMax: 0, type: "button", top: 0, left: 0,}
@@ -24,10 +24,10 @@ var encounterArray = [//Lists encounters as they appear on the map. Nonrepeatabl
 	{index: "skillBooks", 		name: "Read up on self-help", 		location: 'library', 		time: "MorningEvening", 	itemReq: "", trustMin: 0, trustMax: 0, type: "button", top: 25, left: 25, day: "both",},
 	{index: "styleBooks", 		name: "Read up on artistic styles", 		location: 'library', 		time: "MorningEvening", 	itemReq: "", trustMin: 0, trustMax: 0, type: "button", top: 45, left: 45, day: "both",},
 	//index: "gameBooks", 		name: "Read up on the latest trends", 		location: 'library', 		time: "MorningEvening", 	itemReq: "", trustMin: 0, trustMax: 0, type: "button", top: 40, left: 45, day: "both",},
-	{index: "nap", 			name: "Take a Nap", 			location: 'playerHouse', 		time: "MorningEvening", 			itemReq: "", trustMin: 0, trustMax: 0, type: "button", top: 52, left: 35, day: "both",},
-	{index: "nap", 			name: "Take a Nap", 			location: 'playerOffice', 		time: "MorningEvening", 	itemReq: "", trustMin: 0, trustMax: 0, type: "button", top: 52, left: 35, day: "both",},
+	{index: "nap", 			name: "Take a Nap", 			location: 'cellsDungeon', 		time: "MorningEvening", 			itemReq: "", trustMin: 0, trustMax: 0, type: "button", top: 52, left: 35, day: "both",},
+	{index: "nap", 			name: "Take a Nap", 			location: 'lowerDungeon', 		time: "MorningEvening", 	itemReq: "", trustMin: 0, trustMax: 0, type: "button", top: 52, left: 35, day: "both",},
 	{index: "nap", 			name: "Wait", 			location: 'map', 		time: "MorningEvening", 	itemReq: "", trustMin: 0, trustMax: 0, type: "button", top: 0, left: 0, day: "both",},
-	{index: "newDay", 		name: "Go to Bed", 				location: 'playerHouse', 		time: "Night", 		itemReq: "", trustMin: 0, trustMax: 0, type: "button", top: 52, left: 35, day: "both",},
+	{index: "newDay", 		name: "Go to Bed", 				location: 'cellsDungeon', 		time: "Night", 		itemReq: "", trustMin: 0, trustMax: 0, type: "button", top: 52, left: 35, day: "both",},
 	{index: "shop", 		name: "General Store", 			location: 'shoppingDistrict', 	time: "MorningEvening", 	itemReq: "", trustMin: 0, trustMax: 0, type: "button", top: 40, left: 60, day: "both",},
 ];
 
@@ -327,8 +327,9 @@ function writeEncounter(scene) {
 							"Get out of bed", 
 							40, 
 							40, 
-							"playerHouse", 
+							"cellsDungeon", 
 						);
+						println("you wake up and make sure everything is in place for a new day of enslaving")
 					}
 					if (checkFlag("mom", "megaEasy") != true) {
 						var illegalLocations = "map, casino, beach, hotel, playerHouse";
@@ -392,7 +393,7 @@ function writeEncounter(scene) {
 		case "porn": {
 			if (data.player.time == "Night") {
 				writeText("Looking out your window, you notice it's already night! You'll need to get some sleep.");
-			writeFunction("changeLocation('playerHouse')", "Finish");
+			writeFunction("changeLocation('lowerDungeon')", "Finish");
 			}
 			else {
 				if (data.player.carnivore == "true") {
@@ -514,7 +515,7 @@ function writeEncounter(scene) {
 				writeFunction("changeLocation('playerOffice')", "Finish up");
 			}
 			else {
-				writeFunction("changeLocation('playerHouse')", "It's getting late, head home");
+				writeFunction("changeLocation('cellsDungeon')", "It's getting late, head home");
 			}
 			break;
 		}
