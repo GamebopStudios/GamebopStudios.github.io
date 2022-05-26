@@ -52,7 +52,8 @@ var data = {
 		color: "#86b4dc",
 	},
 	story: [
-		{index: "mom", 			met: false, fName: "Emily", lName: "Smith", 		trust: 0, encountered: false, textEvent: "", color: "#CCCCCC", author: "NoodleJacuzzi", artist: "Enoshima Iki", textHistory: "", unreadText: false},
+        {index: "jazzy", 		met: false, fName: "Jasmine", lName: " ", 		trust: 0, encountered: false, textEvent: "", color: "#ea89a8", author: "xEmmy", artist: "Unknown", textHistory: "", unreadText: false},
+		/*{index: "mom", 			met: false, fName: "Emily", lName: "Smith", 		trust: 0, encountered: false, textEvent: "", color: "#CCCCCC", author: "NoodleJacuzzi", artist: "Enoshima Iki", textHistory: "", unreadText: false},
 		{index: "kuro", 		met: false, fName: "Steph", lName: "Black", 		trust: 0, encountered: false, textEvent: "", color: "#fde1a5", author: "NoodleJacuzzi", artist: "Enoshima Iki", textHistory: "", unreadText: false},
 		{index: "tomgirl", 		met: false, fName: "Sam", lName: "White", 			trust: 0, encountered: false, textEvent: "", color: "#a79e9a", author: "NoodleJacuzzi", artist: "Nagi Ichi", textHistory: "", unreadText: false},
 		{index: "purple", 		met: false, fName: "Mary", lName: "Williams", 		trust: 0, encountered: false, textEvent: "", color: "#cb86ef", author: "NoodleJacuzzi", artist: "Oreteki18kin", textHistory: "", unreadText: false},
@@ -90,7 +91,7 @@ var data = {
 		{index: "camboi", fName: "Damian", lName: "Wisk", trust: 0, encountered: false, textEvent: "", met: false, color: "#685E55", author: "NoodleJacuzzi", artist: "Himitsu Kessha Vanitas", textHistory: "", unreadText: false},
 		{index: "fitboi", fName: "Robin", lName: "Lee", trust: 0, encountered: false, textEvent: "", met: false, color: "#885F89", author: "NoodleJacuzzi", artist: "Silver Radish", textHistory: "", unreadText: false,},
 		{index: "miko", fName: "Himari", lName: "Sato", trust: 0, encountered: false, textEvent: "", met: false, color: "#E27546", author: "NoodleJacuzzi", artist: "Oreteki18kin", textHistory: "", unreadText: false,},
-		{index: "itako", fName: "Emi", lName: "Sato", trust: 0, encountered: false, textEvent: "", met: false, color: "#D33D3D", author: "NoodleJacuzzi", artist: "Oreteki18kin", textHistory: "", unreadText: false,},
+		{index: "itako", fName: "Emi", lName: "Sato", trust: 0, encountered: false, textEvent: "", met: false, color: "#D33D3D", author: "NoodleJacuzzi", artist: "Oreteki18kin", textHistory: "", unreadText: false,},*/
 	],
 	gallery: [
 	],
@@ -98,7 +99,8 @@ var data = {
 	],
 	skills: [
 		{name: "hypnosis", score: 1,},
-		{name: "brainhacking", score: 0,},
+		{name: "brainhacking", score: 1,},
+		{name: "corruption", score: 1,},
 		
 	],
 	bodytypes: [
@@ -108,14 +110,14 @@ var data = {
 	],
 }
 
-var maleCharacterList = "tomgirl, meji, housekeep, nagatoro, camboi, succubus, fitboi, priest, serious, coward, gyaruo, papi, son, shyboi,";
+var maleCharacterList = "";
 
-var femaleCharacterList = "mom, purple, kuro, maid, mistress, neet, green, scarf, nurse, haze, nikki, president, treasurer, ojou, mama, pinstripe, instructor, sports, brown, ribbon, miko, itako, cafeblonde, cafedark, cafered, ordinary, pink, prince, emo, starlet, tomboy,";
+var femaleCharacterList = "jazzy,";
 
 var menuButtons = [
 {ID: "invButton", name:"INVENTORY",},
 {ID: "imgButton", name:"TOGGLE IMAGES",},
-{ID: "phoneButton", name:"PHONE",},
+{ID: "phoneButton", name:"MAGIC COMMUNICATION TABLET",},
 {ID: "logButton", name:"LOGBOOK",},
 {ID: "saveButton", name:"SAVE/LOAD",},
 {ID: "restartButton", name:"RESTART",},
