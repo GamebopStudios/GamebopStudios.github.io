@@ -161,8 +161,8 @@ function changeLocation(n) {
 				console.log(data.player.location);
 				n = 'playerHouse';
 				data.player.location = "playerHouse";
-				writeText("The sun has set and the streetlights fizzle on. It'd be best to head home now, otherwise you'll have trouble getting up on time tomorrow.");
-				writeFunction("changeLocation('playerHouse')", "Go Back Home");
+				//writeText("The sun has set and the streetlights fizzle on. It'd be best to head home now, otherwise you'll have trouble getting up on time tomorrow.");
+				writeFunction("changeLocation('cellsDungeon')", "Go Back Home");
 			}
 		}
 		else {
